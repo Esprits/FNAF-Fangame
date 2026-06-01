@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "name": "CamControls",
+    "maps": [
+        {
+            "name": "Ground",
+            "id": "286adc4d-eb08-435b-b764-b5b42c05a0c9",
+            "actions": [
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "87404ee3-9146-47df-b9ad-f7bf6922bbd0",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3f5a1461-3d50-449a-83da-061457afd87f",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "53199e1d-0e1c-4210-a1ea-2dbadc45799c",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -7,8 +7,7 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody rb;
 
-    Vector3 moveDirection;
-    Vector2 lookDirection;
+    Vector3 moveDir;
 
     void Start()
     {
@@ -28,13 +27,7 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue input)
     {
-        moveDirection = new Vector3(input.Get<Vector2>().x, 0, input.Get<Vector2>().y);
-    }
-
-    void OnLook(InputValue input)
-    {
-        lookDirection = input.Get<Vector2>();
-        // TODO Make the player look around
+        moveDir = new Vector3(input.Get<Vector2>().x, 0, input.Get<Vector2>().y);
     }
 
     void OnFlashlight(InputValue input)
@@ -45,9 +38,9 @@ public class PlayerController : MonoBehaviour
 
     void MovePlayer()
     {
-        if (moveDirection != Vector3.zero)
+        if (moveDir != Vector3.zero)
         {
-            rb.AddForce(moveDirection * moveSpeed * 60f, ForceMode.Force);
+            rb.AddForce(moveDir * moveSpeed * 60f, ForceMode.Force);
         }
     }
 }
