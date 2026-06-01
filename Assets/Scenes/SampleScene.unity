@@ -382,8 +382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f1bee75e10905742adb973691c5e991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCam
-  sensX: 400
-  sensY: 400
+  sensX: 20
+  sensY: 20
   orientation: {fileID: 2091536964}
 --- !u!114 &330585549
 MonoBehaviour:
@@ -1002,6 +1002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 5
+  orientation: {fileID: 2091536964}
 --- !u!1 &1305457155
 GameObject:
   m_ObjectHideFlags: 0

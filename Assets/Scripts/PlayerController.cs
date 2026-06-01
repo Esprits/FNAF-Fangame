@@ -5,6 +5,9 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
 
+    [Header("References")]
+    public Transform orientation;
+
     Rigidbody rb;
 
     Vector3 moveDir;
@@ -27,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue input)
     {
-        moveDir = new Vector3(input.Get<Vector2>().x, 0, input.Get<Vector2>().y);
+        moveDir = orientation.forward * input.Get<Vector2>().y + orientation.right * input.Get<Vector2>().x;
     }
 
     void OnFlashlight(InputValue input)
@@ -40,7 +43,7 @@ public class PlayerController : MonoBehaviour
     {
         if (moveDir != Vector3.zero)
         {
-            rb.AddForce(moveDir * moveSpeed * 60f, ForceMode.Force);
+            rb.AddForce(moveDir.normalized * moveSpeed * 60f, ForceMode.Force);
         }
     }
 }
