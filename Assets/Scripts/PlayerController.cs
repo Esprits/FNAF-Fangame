@@ -3,14 +3,17 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public float moveSpeed;
+
     Rigidbody rb;
 
-    Vector2 moveDirection;
+    Vector3 moveDirection;
     Vector2 lookDirection;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
     }
 
     void Update()
@@ -18,10 +21,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void FixedUpdate()
+    {
+        MovePlayer();
+    }
+
     void OnMove(InputValue input)
     {
-        moveDirection = input.Get<Vector2>();
-        // TODO Make the player move
+        moveDirection = new Vector3(input.Get<Vector2>().x, 0, input.Get<Vector2>().y);
     }
 
     void OnLook(InputValue input)
@@ -34,5 +41,13 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log(input.isPressed);
         // TODO Toggle the flashlight
+    }
+
+    void MovePlayer()
+    {
+        if (moveDirection != Vector3.zero)
+        {
+            rb.AddForce(moveDirection * moveSpeed * 60f, ForceMode.Force);
+        }
     }
 }
