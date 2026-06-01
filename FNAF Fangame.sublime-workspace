@@ -1,1 +1,1355 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"floor",
+				"floorLevitation"
+			],
+			[
+				"Vec",
+				"Vector3"
+			],
+			[
+				"DrawLine",
+				"DrawLine\tDebug.*(start, end, color, duration, depthTest)"
+			],
+			[
+				"forward",
+				"forward\tTransform.*"
+			],
+			[
+				"slerp",
+				"slerp\tQuaternion.*(a, b, t)"
+			],
+			[
+				"fixe",
+				"Time.fixedUnscaledTime\t[property]"
+			],
+			[
+				"Find",
+				"Find\tGameObject.*(name)"
+			],
+			[
+				"rota",
+				"transform.RotateAround\t*(point, axis, angle)"
+			],
+			[
+				"RotateAround",
+				"transform.RotateAround\t*(point, axis, angle)"
+			],
+			[
+				"Rota",
+				"transform.RotateAround\t*(point, axis, angle)"
+			],
+			[
+				"R",
+				"transform.Rotate\t*(xAngle, yAngle, zAngle, relativeTo)"
+			],
+			[
+				"Too",
+				"Tooltip"
+			],
+			[
+				"AddForce",
+				"AddForce\tRigidbody2D.*(force, mode)"
+			],
+			[
+				"fixed",
+				"Time.fixedDeltaTime\t[property]"
+			],
+			[
+				"fix",
+				"Time.fixedDeltaTime\t[property]"
+			],
+			[
+				"Fixed",
+				"Time.fixedDeltaTime\t[property]"
+			],
+			[
+				"context",
+				"context"
+			],
+			[
+				"ac",
+				"actions"
+			],
+			[
+				"Get",
+				"GetComponent<>"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Package Control Messages\n========================\n\n\nLSP\n---\n\n  => 2.12.1\n  \n  # Fixes\n  \n  - Fix config equality check not considering \"enabled\" (#2940) (Rafał Chłodnicki)\n  - Notify correctly on config changes in projects (#2937) (Rafał Chłodnicki)\n\n  => 2.12.0\n  \n  # Features\n  \n  - Add support for resource operations in WorkspaceEdit (#2907)  (jwortmann)\n  - Add support to open URI schemes with server-provided content (#2890) (jwortmann)\n  \n  # Fixes\n  \n  - Fix lsp_code_lens command executing last code lens on cancel (#2925) (jwortmann)\n  - Fix project overrides getting lost on saving global configs (#2932) (Rafał Chłodnicki)\n  - Remove incorrect workaround for old markdown parser (#2930) (Rafał Chłodnicki)\n  - Run handlers after responding instead of from set_timeout_async (#2927) (Rafał Chłodnicki)\n  - Fix markdown_language_map setting not working (#2924) (Jack Cherng)\n  - Fix code lenses handled via AbstractPlugin.on_pre_server_command (#2919) (jwortmann)\n  - Fix on_sheet_opened called twice from uri_handler (#2914) (Rafał Chłodnicki)\n  - Fix params name in ServerNotification (#2908) (Rafał Chłodnicki)\n  - Fix ClientConfig equality check (#2936)\n  \n  # Enhancements\n  \n  - Allow setting root ClientConfig settings (#2906) (Rafał Chłodnicki)\n  - Show \"Follow link\" in hover popup for unknown links (#2913) (Rafał Chłodnicki)\n  - Only attempt on-type-formatting when replace length is 0 (#2911) (Rafał Chłodnicki)\n  - Remove text decoration on link within kbd in popups (#2909) (Rafał Chłodnicki)\n  - Focus view on open file URI from hover (#2934) (jwortmann)\n  \n  # Refactors\n  \n  - Remove Session.__getattr__ (#2912) (Rafał Chłodnicki)\n  - Refactor workspace edit handling (#2905) (jwortmann)\n  \n  # Documentation\n  \n  - Add link to Civet LSP (#2929) (Erik Demaine)\n  - Add instructions to install nixd for Nix (#2920) (Max Smolin)\n  - Fix a few outdated links in settings descriptions (#2922) (jwortmann)\n",
+			"settings":
+			{
+				"buffer_size": 1930,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"package_control_message",
+					{
+						"message": "\n\nLSP\n---\n\n  => 2.12.1\n  \n  # Fixes\n  \n  - Fix config equality check not considering \"enabled\" (#2940) (Rafał Chłodnicki)\n  - Notify correctly on config changes in projects (#2937) (Rafał Chłodnicki)\n\n  => 2.12.0\n  \n  # Features\n  \n  - Add support for resource operations in WorkspaceEdit (#2907)  (jwortmann)\n  - Add support to open URI schemes with server-provided content (#2890) (jwortmann)\n  \n  # Fixes\n  \n  - Fix lsp_code_lens command executing last code lens on cancel (#2925) (jwortmann)\n  - Fix project overrides getting lost on saving global configs (#2932) (Rafał Chłodnicki)\n  - Remove incorrect workaround for old markdown parser (#2930) (Rafał Chłodnicki)\n  - Run handlers after responding instead of from set_timeout_async (#2927) (Rafał Chłodnicki)\n  - Fix markdown_language_map setting not working (#2924) (Jack Cherng)\n  - Fix code lenses handled via AbstractPlugin.on_pre_server_command (#2919) (jwortmann)\n  - Fix on_sheet_opened called twice from uri_handler (#2914) (Rafał Chłodnicki)\n  - Fix params name in ServerNotification (#2908) (Rafał Chłodnicki)\n  - Fix ClientConfig equality check (#2936)\n  \n  # Enhancements\n  \n  - Allow setting root ClientConfig settings (#2906) (Rafał Chłodnicki)\n  - Show \"Follow link\" in hover popup for unknown links (#2913) (Rafał Chłodnicki)\n  - Only attempt on-type-formatting when replace length is 0 (#2911) (Rafał Chłodnicki)\n  - Remove text decoration on link within kbd in popups (#2909) (Rafał Chłodnicki)\n  - Focus view on open file URI from hover (#2934) (jwortmann)\n  \n  # Refactors\n  \n  - Remove Session.__getattr__ (#2912) (Rafał Chłodnicki)\n  - Refactor workspace edit handling (#2905) (jwortmann)\n  \n  # Documentation\n  \n  - Add link to Civet LSP (#2929) (Erik Demaine)\n  - Add instructions to install nixd for Nix (#2920) (Max Smolin)\n  - Fix a few outdated links in settings descriptions (#2922) (jwortmann)\n"
+					},
+					"AQAAAAAAAAAAAAAAigcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "Assets/Scripts/PlayerController.cs",
+			"settings":
+			{
+				"buffer_size": 226,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"AQAAAM4AAAAAAAAAzgAAAAAAAAAnAAAACiAgICAvLyBVcGRhdGUgaXMgY2FsbGVkIG9uY2UgcGVyIGZyYW1l",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD1AAAAAAAAAM4AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					11,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEMAAAAAAAAAQwAAAAAAAABkAAAACiAgICAvLyBTdGFydCBpcyBjYWxsZWQgb25jZSBiZWZvcmUgdGhlIGZpcnN0IGV4ZWN1dGlvbiBvZiBVcGRhdGUgYWZ0ZXIgdGhlIE1vbm9CZWhhdmlvdXIgaXMgY3JlYXRlZA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACnAAAAAAAAAEMAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					13,
+					1,
+					"lsp_apply_text_document_edit",
+					{
+						"edits":
+						[
+							{
+								"newText": "",
+								"range":
+								{
+									"end":
+									{
+										"character": 8,
+										"line": 11
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 11
+									}
+								}
+							},
+							{
+								"newText": "",
+								"range":
+								{
+									"end":
+									{
+										"character": 8,
+										"line": 6
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 6
+									}
+								}
+							}
+						],
+						"label": "Format on Save"
+					},
+					"AgAAAIMAAAAAAAAAgwAAAAAAAAAIAAAAICAgICAgICBbAAAAAAAAAFsAAAAAAAAACAAAACAgICAgICAg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABDAAAAAAAAAEMAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					16,
+					1,
+					"reindent",
+					null,
+					"AQAAAFsAAAAAAAAAYwAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABbAAAAAAAAAFsAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "\nRg"
+					},
+					"BAAAAEMAAAAAAAAASAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAgAAAAgICAgICAgIEgAAAAAAAAASQAAAAAAAAAAAAAASQAAAAAAAABKAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABDAAAAAAAAAEMAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					20,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEkAAAAAAAAASQAAAAAAAAABAAAAZw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABKAAAAAAAAAEoAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": "igidbody"
+					},
+					"CAAAAEkAAAAAAAAASgAAAAAAAAAAAAAASgAAAAAAAABLAAAAAAAAAAAAAABLAAAAAAAAAEwAAAAAAAAAAAAAAEwAAAAAAAAATQAAAAAAAAAAAAAATQAAAAAAAABOAAAAAAAAAAAAAABOAAAAAAAAAE8AAAAAAAAAAAAAAE8AAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABRAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABJAAAAAAAAAEkAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": " rb"
+					},
+					"AwAAAFEAAAAAAAAAUgAAAAAAAAAAAAAAUgAAAAAAAABTAAAAAAAAAAAAAABTAAAAAAAAAFQAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABRAAAAAAAAAFEAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					23,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAFQAAAAAAAAAVQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABUAAAAAAAAAFQAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					24,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFQAAAAAAAAAVAAAAAAAAAABAAAAIA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABVAAAAAAAAAFUAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					25,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAFQAAAAAAAAAVQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABUAAAAAAAAAFQAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAFUAAAAAAAAAWgAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABVAAAAAAAAAFUAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					28,
+					1,
+					"reindent",
+					null,
+					"AQAAAHIAAAAAAAAAegAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAByAAAAAAAAAHIAAAAAAAAAAAAAAAAAQEA"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": "rigi"
+					},
+					"BQAAAHoAAAAAAAAAewAAAAAAAAAAAAAAVgAAAAAAAABWAAAAAAAAAAQAAAAgICAgdwAAAAAAAAB4AAAAAAAAAAAAAAB4AAAAAAAAAHkAAAAAAAAAAAAAAHkAAAAAAAAAegAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB6AAAAAAAAAHoAAAAAAAAAAAAAAAAAUEA"
+				],
+				[
+					32,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAHYAAAAAAAAAdgAAAAAAAAAEAAAAcmlnaQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB6AAAAAAAAAHoAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": "rb."
+					},
+					"AwAAAHYAAAAAAAAAdwAAAAAAAAAAAAAAdwAAAAAAAAB4AAAAAAAAAAAAAAB4AAAAAAAAAHkAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB2AAAAAAAAAHYAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					34,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHgAAAAAAAAAeAAAAAAAAAABAAAALg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB5AAAAAAAAAHkAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					35,
+					1,
+					"insert",
+					{
+						"characters": " ="
+					},
+					"AgAAAHgAAAAAAAAAeQAAAAAAAAAAAAAAeQAAAAAAAAB6AAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB4AAAAAAAAAHgAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					36,
+					1,
+					"insert",
+					{
+						"characters": " Get"
+					},
+					"BAAAAHoAAAAAAAAAewAAAAAAAAAAAAAAewAAAAAAAAB8AAAAAAAAAAAAAAB8AAAAAAAAAH0AAAAAAAAAAAAAAH0AAAAAAAAAfgAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB6AAAAAAAAAHoAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					37,
+					1,
+					"insert",
+					{
+						"characters": "Com"
+					},
+					"AwAAAH4AAAAAAAAAfwAAAAAAAAAAAAAAfwAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAIEAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB+AAAAAAAAAH4AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					38,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":309,\"session_name\":\"OmniSharp\"}",
+						"format": "command",
+						"keep_prefix": true,
+						"must_insert": false,
+						"query_change_id":
+						[
+							30,
+							36,
+							1
+						],
+						"trigger": "GetComponent"
+					},
+					"BwAAAIAAAAAAAAAAgAAAAAAAAAABAAAAbX8AAAAAAAAAfwAAAAAAAAABAAAAb34AAAAAAAAAfgAAAAAAAAABAAAAQ30AAAAAAAAAfQAAAAAAAAABAAAAdHwAAAAAAAAAfAAAAAAAAAABAAAAZXsAAAAAAAAAewAAAAAAAAABAAAAR3sAAAAAAAAAhwAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACBAAAAAAAAAIEAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					39,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIYAAAAAAAAAhgAAAAAAAAABAAAAdA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACHAAAAAAAAAIcAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					40,
+					1,
+					"insert",
+					{
+						"characters": "t<Rig"
+					},
+					"BQAAAIYAAAAAAAAAhwAAAAAAAAAAAAAAhwAAAAAAAACIAAAAAAAAAAAAAACIAAAAAAAAAIkAAAAAAAAAAAAAAIkAAAAAAAAAigAAAAAAAAAAAAAAigAAAAAAAACLAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACGAAAAAAAAAIYAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					41,
+					1,
+					"insert_completion",
+					{
+						"completion": "lsp_select_completion {\"index\":594,\"session_name\":\"OmniSharp\"}",
+						"format": "command",
+						"keep_prefix": true,
+						"must_insert": false,
+						"query_change_id":
+						[
+							34,
+							40,
+							3
+						],
+						"trigger": "Rigidbody"
+					},
+					"BAAAAIoAAAAAAAAAigAAAAAAAAABAAAAZ4kAAAAAAAAAiQAAAAAAAAABAAAAaYgAAAAAAAAAiAAAAAAAAAABAAAAUogAAAAAAAAAkQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACLAAAAAAAAAIsAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					42,
+					1,
+					"insert",
+					{
+						"characters": ">"
+					},
+					"AQAAAJEAAAAAAAAAkgAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACRAAAAAAAAAJEAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					43,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAJIAAAAAAAAAlAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACSAAAAAAAAAJIAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					45,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAJQAAAAAAAAAlQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACUAAAAAAAAAJQAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					51,
+					1,
+					"insert",
+					{
+						"characters": "//"
+					},
+					"AgAAALUAAAAAAAAAtgAAAAAAAAAAAAAAtgAAAAAAAAC3AAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC1AAAAAAAAALUAAAAAAAAAAAAAAACAc0A"
+				],
+				[
+					52,
+					2,
+					"left_delete",
+					null,
+					"AgAAALYAAAAAAAAAtgAAAAAAAAABAAAAL7UAAAAAAAAAtQAAAAAAAAABAAAALw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC3AAAAAAAAALcAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					53,
+					1,
+					"reindent",
+					null,
+					"AQAAALUAAAAAAAAAvQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC1AAAAAAAAALUAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					54,
+					1,
+					"insert",
+					{
+						"characters": "\t"
+					},
+					"AQAAAL0AAAAAAAAAwQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC9AAAAAAAAAL0AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					55,
+					1,
+					"left_delete",
+					null,
+					"AQAAAL0AAAAAAAAAvQAAAAAAAAAEAAAAICAgIA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADBAAAAAAAAAMEAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					56,
+					1,
+					"insert",
+					{
+						"characters": "//"
+					},
+					"AgAAAL0AAAAAAAAAvgAAAAAAAAAAAAAAvgAAAAAAAAC/AAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC9AAAAAAAAAL0AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					57,
+					1,
+					"insert",
+					{
+						"characters": " Get"
+					},
+					"BAAAAL8AAAAAAAAAwAAAAAAAAAAAAAAAwAAAAAAAAADBAAAAAAAAAAAAAADBAAAAAAAAAMIAAAAAAAAAAAAAAMIAAAAAAAAAwwAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC/AAAAAAAAAL8AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					58,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAMMAAAAAAAAAxAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADDAAAAAAAAAMMAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					59,
+					3,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AwAAAMAAAAAAAAAAwAAAAAAAAAAEAAAAR2V0IL0AAAAAAAAAvQAAAAAAAAADAAAALy8gtQAAAAAAAAC1AAAAAAAAAAgAAAAgICAgICAgIA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADEAAAAAAAAAMQAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					60,
+					1,
+					"left_delete",
+					null,
+					"AQAAALQAAAAAAAAAtAAAAAAAAAABAAAACg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC1AAAAAAAAALUAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					62,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAALQAAAAAAAAAvQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC0AAAAAAAAALQAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					64,
+					1,
+					"lsp_apply_text_document_edit",
+					{
+						"edits":
+						[
+							{
+								"newText": "",
+								"range":
+								{
+									"end":
+									{
+										"character": 8,
+										"line": 13
+									},
+									"start":
+									{
+										"character": 0,
+										"line": 13
+									}
+								}
+							}
+						],
+						"label": "Format on Save"
+					},
+					"AQAAALUAAAAAAAAAtQAAAAAAAAAIAAAAICAgICAgICA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC9AAAAAAAAAL0AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\n\nviud"
+					},
+					"BwAAALsAAAAAAAAAwAAAAAAAAAAAAAAAwAAAAAAAAADFAAAAAAAAAAAAAAC8AAAAAAAAALwAAAAAAAAABAAAACAgICDBAAAAAAAAAMIAAAAAAAAAAAAAAMIAAAAAAAAAwwAAAAAAAAAAAAAAwwAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMUAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuwAAAAAAAAC7AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					3,
+					"left_delete",
+					null,
+					"AwAAAMQAAAAAAAAAxAAAAAAAAAABAAAAZMMAAAAAAAAAwwAAAAAAAAABAAAAdcIAAAAAAAAAwgAAAAAAAAABAAAAaQ",
+					"AQAAAAAAAAABAAAAxQAAAAAAAADFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "oid"
+					},
+					"AwAAAMIAAAAAAAAAwwAAAAAAAAAAAAAAwwAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMUAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwgAAAAAAAADCAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": " onMo"
+					},
+					"BQAAAMUAAAAAAAAAxgAAAAAAAAAAAAAAxgAAAAAAAADHAAAAAAAAAAAAAADHAAAAAAAAAMgAAAAAAAAAAAAAAMgAAAAAAAAAyQAAAAAAAAAAAAAAyQAAAAAAAADKAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQAAAAAAAADFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAMYAAAAAAAAAxgAAAAAAAAAEAAAAb25Nbw",
+					"AQAAAAAAAAABAAAAygAAAAAAAADKAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": "OnMove"
+					},
+					"BgAAAMYAAAAAAAAAxwAAAAAAAAAAAAAAxwAAAAAAAADIAAAAAAAAAAAAAADIAAAAAAAAAMkAAAAAAAAAAAAAAMkAAAAAAAAAygAAAAAAAAAAAAAAygAAAAAAAADLAAAAAAAAAAAAAADLAAAAAAAAAMwAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgAAAAAAAADGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAMwAAAAAAAAAzgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzAAAAAAAAADMAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAM4AAAAAAAAA0AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzgAAAAAAAADOAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"BAAAAM8AAAAAAAAA1AAAAAAAAAAAAAAA1AAAAAAAAADZAAAAAAAAAAAAAADQAAAAAAAAANAAAAAAAAAABAAAACAgICDQAAAAAAAAANgAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzwAAAAAAAADPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "\n\nvoid"
+					},
+					"CAAAAN4AAAAAAAAA4wAAAAAAAAAAAAAA0AAAAAAAAADQAAAAAAAAAAgAAAAgICAgICAgINsAAAAAAAAA4AAAAAAAAAAAAAAA1wAAAAAAAADXAAAAAAAAAAQAAAAgICAg3AAAAAAAAADdAAAAAAAAAAAAAADdAAAAAAAAAN4AAAAAAAAAAAAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA3wAAAAAAAADgAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gAAAAAAAADeAAAAAAAAAAAAAAAAAFBA"
+				],
+				[
+					17,
+					1,
+					"insert",
+					{
+						"characters": " OnLook"
+					},
+					"BwAAAOAAAAAAAAAA4QAAAAAAAAAAAAAA4QAAAAAAAADiAAAAAAAAAAAAAADiAAAAAAAAAOMAAAAAAAAAAAAAAOMAAAAAAAAA5AAAAAAAAAAAAAAA5AAAAAAAAADlAAAAAAAAAAAAAADlAAAAAAAAAOYAAAAAAAAAAAAAAOYAAAAAAAAA5wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4AAAAAAAAADgAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAOcAAAAAAAAA6QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5wAAAAAAAADnAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAOkAAAAAAAAA6gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6QAAAAAAAADpAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAOoAAAAAAAAA7AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6gAAAAAAAADqAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"BAAAAOsAAAAAAAAA8AAAAAAAAAAAAAAA8AAAAAAAAAD1AAAAAAAAAAAAAADsAAAAAAAAAOwAAAAAAAAABAAAACAgICDsAAAAAAAAAPQAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6wAAAAAAAADrAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"insert",
+					{
+						"characters": "\n\nvoid"
+					},
+					"CAAAAPoAAAAAAAAA/wAAAAAAAAAAAAAA7AAAAAAAAADsAAAAAAAAAAgAAAAgICAgICAgIPcAAAAAAAAA/AAAAAAAAAAAAAAA8wAAAAAAAADzAAAAAAAAAAQAAAAgICAg+AAAAAAAAAD5AAAAAAAAAAAAAAD5AAAAAAAAAPoAAAAAAAAAAAAAAPoAAAAAAAAA+wAAAAAAAAAAAAAA+wAAAAAAAAD8AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+gAAAAAAAAD6AAAAAAAAAAAAAAAAAFBA"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": " OnFlash"
+					},
+					"CAAAAPwAAAAAAAAA/QAAAAAAAAAAAAAA/QAAAAAAAAD+AAAAAAAAAAAAAAD+AAAAAAAAAP8AAAAAAAAAAAAAAP8AAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAABAQAAAAAAAAAAAAABAQAAAAAAAAIBAAAAAAAAAAAAAAIBAAAAAAAAAwEAAAAAAAAAAAAAAwEAAAAAAAAEAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/AAAAAAAAAD8AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "Lig"
+					},
+					"AwAAAAQBAAAAAAAABQEAAAAAAAAAAAAABQEAAAAAAAAGAQAAAAAAAAAAAAAGAQAAAAAAAAcBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABAEAAAAAAAAEAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					3,
+					"left_delete",
+					null,
+					"AwAAAAYBAAAAAAAABgEAAAAAAAABAAAAZwUBAAAAAAAABQEAAAAAAAABAAAAaQQBAAAAAAAABAEAAAAAAAABAAAATA",
+					"AQAAAAAAAAABAAAABwEAAAAAAAAHAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"insert",
+					{
+						"characters": "light"
+					},
+					"BQAAAAQBAAAAAAAABQEAAAAAAAAAAAAABQEAAAAAAAAGAQAAAAAAAAAAAAAGAQAAAAAAAAcBAAAAAAAAAAAAAAcBAAAAAAAACAEAAAAAAAAAAAAACAEAAAAAAAAJAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABAEAAAAAAAAEAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAAkBAAAAAAAACwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACQEAAAAAAAAJAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAAsBAAAAAAAADQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACwEAAAAAAAALAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"BAAAAAwBAAAAAAAAEQEAAAAAAAAAAAAAEQEAAAAAAAAWAQAAAAAAAAAAAAANAQAAAAAAAA0BAAAAAAAABAAAACAgICANAQAAAAAAABUBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADAEAAAAAAAAMAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					39,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAM4AAAAAAAAA0wAAAAAAAAAAAAAAEgEAAAAAAAASAQAAAAAAAAgAAAAgICAgICAgIA",
+					"AQAAAAAAAAABAAAAzgAAAAAAAADOAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					42,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAABABAAAAAAAAFQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEAEAAAAAAAAQAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					55,
+					1,
+					"insert",
+					{
+						"characters": "\n\nonMove"
+					},
+					"CQAAALsAAAAAAAAAwAAAAAAAAAAAAAAAwAAAAAAAAADFAAAAAAAAAAAAAAC8AAAAAAAAALwAAAAAAAAABAAAACAgICDBAAAAAAAAAMIAAAAAAAAAAAAAAMIAAAAAAAAAwwAAAAAAAAAAAAAAwwAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMUAAAAAAAAAAAAAAMUAAAAAAAAAxgAAAAAAAAAAAAAAxgAAAAAAAADHAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuwAAAAAAAAC7AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAMEAAAAAAAAAwQAAAAAAAAAGAAAAb25Nb3Zl",
+					"AQAAAAAAAAABAAAAxwAAAAAAAADHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"insert",
+					{
+						"characters": "OnMove"
+					},
+					"BgAAAMEAAAAAAAAAwgAAAAAAAAAAAAAAwgAAAAAAAADDAAAAAAAAAAAAAADDAAAAAAAAAMQAAAAAAAAAAAAAAMQAAAAAAAAAxQAAAAAAAAAAAAAAxQAAAAAAAADGAAAAAAAAAAAAAADGAAAAAAAAAMcAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwQAAAAAAAADBAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"left_delete",
+					null,
+					"AQAAAMYAAAAAAAAAxgAAAAAAAAABAAAAZQ",
+					"AQAAAAAAAAABAAAAxwAAAAAAAADHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					60,
+					1,
+					"insert",
+					{
+						"characters": "e"
+					},
+					"AQAAAMYAAAAAAAAAxwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgAAAAAAAADGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					61,
+					5,
+					"left_delete",
+					null,
+					"BQAAAMYAAAAAAAAAxgAAAAAAAAABAAAAZcUAAAAAAAAAxQAAAAAAAAABAAAAdsQAAAAAAAAAxAAAAAAAAAABAAAAb8MAAAAAAAAAwwAAAAAAAAABAAAATcIAAAAAAAAAwgAAAAAAAAABAAAAbg",
+					"AQAAAAAAAAABAAAAxwAAAAAAAADHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					62,
+					1,
+					"insert_completion",
+					{
+						"completion": "OnLook",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "OnLook"
+					},
+					"AgAAAMEAAAAAAAAAwQAAAAAAAAABAAAAT8EAAAAAAAAAxwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwgAAAAAAAADCAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					63,
+					2,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AgAAAMEAAAAAAAAAwQAAAAAAAAAGAAAAT25Mb29rvQAAAAAAAAC9AAAAAAAAAAQAAAAgICAg",
+					"AQAAAAAAAAABAAAAxwAAAAAAAADHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					64,
+					2,
+					"left_delete",
+					null,
+					"AgAAALwAAAAAAAAAvAAAAAAAAAABAAAACrsAAAAAAAAAuwAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAvQAAAAAAAAC9AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					67,
+					1,
+					"left_delete",
+					null,
+					"AQAAALsAAAAAAAAAuwAAAAAAAABiAAAACgogICAgdm9pZCBPbk1vdmUoKQogICAgewoKICAgIH0KCiAgICB2b2lkIE9uTG9vaygpIHsKCiAgICB9CgogICAgdm9pZCBPbkZsYXNobGlnaHQoKQogICAgewoKICAgIH0",
+					"AQAAAAAAAAABAAAAHQEAAAAAAAC7AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					68,
+					1,
+					"insert",
+					{
+						"characters": "\n\nvoid"
+					},
+					"BwAAALsAAAAAAAAAwAAAAAAAAAAAAAAAwAAAAAAAAADFAAAAAAAAAAAAAAC8AAAAAAAAALwAAAAAAAAABAAAACAgICDBAAAAAAAAAMIAAAAAAAAAAAAAAMIAAAAAAAAAwwAAAAAAAAAAAAAAwwAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMUAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuwAAAAAAAAC7AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					69,
+					1,
+					"insert",
+					{
+						"characters": " OnMove"
+					},
+					"BwAAAMUAAAAAAAAAxgAAAAAAAAAAAAAAxgAAAAAAAADHAAAAAAAAAAAAAADHAAAAAAAAAMgAAAAAAAAAAAAAAMgAAAAAAAAAyQAAAAAAAAAAAAAAyQAAAAAAAADKAAAAAAAAAAAAAADKAAAAAAAAAMsAAAAAAAAAAAAAAMsAAAAAAAAAzAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQAAAAAAAADFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					70,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAMwAAAAAAAAAzgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzAAAAAAAAADMAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					72,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAM4AAAAAAAAAzwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzgAAAAAAAADOAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					73,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAM8AAAAAAAAA0QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzwAAAAAAAADPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					74,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"BAAAANAAAAAAAAAA1QAAAAAAAAAAAAAA1QAAAAAAAADaAAAAAAAAAAAAAADRAAAAAAAAANEAAAAAAAAABAAAACAgICDRAAAAAAAAANkAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0AAAAAAAAADQAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"lsp:",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"omnisharp",
+				"Preferences: LSP-OmniSharp Settings"
+			],
+			[
+				"colored comments",
+				"Colored Comments: Settings"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"highligh",
+				"HighlightWords: Toggle Settings"
+			],
+			[
+				"install packa",
+				"Package Control: Install Package"
+			],
+			[
+				"colored",
+				"Colored Comments: List All Tags"
+			],
+			[
+				"colored comm",
+				"Colored Comments: List All Tags"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"color scheme",
+				"UI: Customize Color Scheme"
+			],
+			[
+				"colorschem",
+				"UI: Customize Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"colorsch",
+				"UI: Customize Color Scheme"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"lsp",
+				"Preferences: LSP Utils Settings"
+			],
+			[
+				"format",
+				"LSP: Format File"
+			],
+			[
+				"omni",
+				"Preferences: LSP-OmniSharp Settings"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"lsp enab",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"lsp ena",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"lsp-",
+				"Preferences: LSP-OmniSharp Settings"
+			],
+			[
+				"preferences lsp-om",
+				"Preferences: LSP-OmniSharp Settings"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package control ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/esprits/Documents/Programming/Unity/Projects/FNAF Fangame"
+	],
+	"file_history":
+	[
+		"/home/esprits/Desktop/songs.txt",
+		"/home/esprits/Pictures/desktop.ini",
+		"/home/esprits/Music/Music Stuff/songs.txt",
+		"/home/esprits/Documents/YouTube/Media/Scripts/mario_script.txt",
+		"/home/esprits/Documents/Minecraft/security_questions.txt",
+		"/home/esprits/Documents/Text Files/cs_purchases.txt",
+		"/home/esprits/Documents/Text Files/yuly_interview_practice.txt",
+		"/home/esprits/Documents/Text Files/activating_windows_11.txt",
+		"/home/esprits/Documents/Text Files/job_info.txt",
+		"/home/esprits/Documents/Unity/Projects/Terror Game/Assets/Scripts/PlayerController.cs",
+		"/mnt/pipis/config/Discord-Integration.toml",
+		"/mnt/pipis/DiscordIntegration-Data/LinkedPlayers.json",
+		"/home/esprits/Documents/Unity/Projects/Terror Game/Library/PackageCache/com.unity.ugui@d7513075a458/Runtime/TMP/TextMeshProUGUI.cs",
+		"/home/esprits/Documents/Unity/Projects/Terror Game/Assets/Scripts/ThirdPersonCamera.cs",
+		"/home/esprits/Documents/Unity/Projects/Terror Game/Assets/Scripts/CameraFollowPlayer.cs",
+		"/home/esprits/.config/plasma-org.kde.plasma.desktop-appletsrc",
+		"/home/esprits/.config/sublime-text/.gitignore",
+		"/home/esprits/Documents/Unity/Projects/Terror Game/Packages/manifest.json",
+		"/home/esprits/.config/sublime-text/Packages/User/LSP.sublime-settings",
+		"/home/esprits/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+		"/home/esprits/Documents/Unity/Projects/Terror Game/Library/PackageCache/com.unity.render-pipelines.universal@d3e85a370c01/Shaders/Lit.shader",
+		"/home/esprits/Documents/Unity/Projects/Terror Game/Assets/Scripts/PlayerMovement.cs",
+		"/home/esprits/Documents/Unity/Projects/Terror Game/Assembly-CSharp.csproj"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 136.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			");\n",
+			"input.Get<Vector2>",
+			"camera",
+			"   ",
+			");\n",
+			"sprint"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1930,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1930,
+								1930
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_indent": false,
+							"gutter": false,
+							"lsp_uri": "buffer:36",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Scripts/PlayerController.cs",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								}
+							],
+							"lsp_uri": "file:///home/esprits/Documents/Programming/Unity/Projects/FNAF%20Fangame/Assets/Scripts/PlayerController.cs",
+							"show_definitions": false,
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 47.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "FNAF Fangame.sublime-project",
+	"replace":
+	{
+		"height": 90.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
